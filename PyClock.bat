@@ -7,14 +7,14 @@ goto :BLANK
 :START
 start "My PyClock" cmd /c "mode con: cols=78 lines=9 && python "%CD%\PyClock.py" "%1" "%2"
 timeout /t 1 >NUL
-nircmd win setsize ititle "My PyClock" 3840 -492 640 183
+rem nircmd win setsize ititle "My PyClock" 3840 -492 640 183
 goto :EOF
 exit
 
 :BLANK
 start "My PyClock" cmd /c "mode con: cols=78 lines=9 && python "%CD%\PyClock.py"
 timeout /t 1 >NUL
-nircmd win setsize ititle "My PyClock" 3840 -492 640 183
+rem nircmd win setsize ititle "My PyClock" 3840 -492 640 183
 goto :EOF
 exit
 
